@@ -14,11 +14,11 @@
 1. [Overview](#overview)
 2. [How to use](#how-to-use)
 3. [How to build](#how-to-build)
-   0. [Universal Easy Way. GitHub Actions]()
-   1. [Unix-like OS](#unix-like-os)
+   1. [Universal Easy Way. GitHub Actions]()
+   2. [Unix-like OS](#unix-like-os)
       1. [Docker way](#docker-way)
       2. [Without Docker](#without-docker)
-   2. [Windows OS](#windows-os)
+   3. [Windows OS](#windows-os)
 4. [Troubleshooting](#troubleshooting)
 
 
