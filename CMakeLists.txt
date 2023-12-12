@@ -10,34 +10,6 @@ if(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
 	message(FATAL_ERROR "\n\n\n**************************************************")
 endif()
 
-add_subdirectory(stm32)
-
-add_subdirectory(stm8)
-
-if(NOT ${TARGET_REMCU_OS_NAME} STREQUAL "Raspbian_armv6")
-	add_subdirectory(nordicsemi)
-endif()
-
-if(NOT WIN32)
-
-	if(NOT APPLE)
-		add_subdirectory(NXP)
-		add_subdirectory(Atmel)
-	endif()
-
-	add_subdirectory(SiLabs)
-
-	if(NOT ${TARGET_REMCU_OS_NAME} STREQUAL "Raspbian_armv6")
-		
-		add_subdirectory(freescale)
-		
-		if(NOT APPLE)
-			add_subdirectory(infineon)
-		endif()
-		
-	endif()
-
-endif(NOT WIN32)
 
 include(${CMAKE_ROOT}/Modules/ExternalProject.cmake)
 
