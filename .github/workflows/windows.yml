@@ -60,6 +60,9 @@ jobs:
       run: |
         cmake --build build
 
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+
     - name: Zip artifacts
       run: |
         /c/msys64/usr/bin/zip -qqr build_folder.zip build
